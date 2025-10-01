@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Booking</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <style>
+    /* video background */
+    #video-wrapper {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    #myVideo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+      filter: brightness(0.7);
+    }
+
+    /* overlay to improve text contrast */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: -1;
+    }
+
+    body {
+      background: black;
+      color: #fff;
+      font-family: 'Times New Roman', Times, serif;
+      min-height: 100vh;
+      padding-top: 70px; /* space for navbar */
+    }
+
+    .room-card h4 {
+      margin-top: 0.75rem;
+    }
+
+    .room-card h6 {
+      font-weight: 400;
+    }
+
+    .btn-book {
+      margin-top: 0.75rem;
+    }
+
+    .navbar-brand {
+      font-weight: 600;
+    }
+
+    .facility-title {
+      margin-bottom: 0.25rem;
+    }
+  </style>
+</head>
+
+<body style="color: white;">
+
+  <div id="video-wrapper">
+    <video id="myVideo" loop autoplay muted playsinline poster="image/placeholder.jpg" aria-label="Background hotel room video">
+      <source src="video/hotel-room.mp4" type="video/mp4" />
+      <!-- fallback message -->
+    </video>
+    <div class="overlay"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Hotel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="i.html">Information</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="u.html">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="r.html">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <section class="py-5" style="color: white;">
+    <div class="container">
+      <h1 class="text-center mb-5">HOTEL ROOM AND FACILITY</h1>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- Card 1 -->
+        <div class="col" style="color: white;">
+          <div class="card h-100 text-center bg-transparent border-light room-card">
+            <img src="image/hotel-bedroom.jpeg" class="card-img-top img-fluid" alt="Standard room with seaside view"
+              style="max-height: 150px; object-fit: cover;" />
+            <div class="card-body">
+              <h4 class="card-title">STANDARD ROOM</h4>
+              <p class="facility-title mb-1"><strong>FACILITY:</strong></p>
+              <p class="card-text mb-1">King size bed, balcony with seaside view, warm room</p>
+              <button type="button" class="btn btn-primary btn-book"
+                onclick="alert('KAMAR TELAH ANDA BOOKING, SELAMAT BERLIBUR')">BOOK NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col" style="color: white;">
+          <div class="card h-100 text-center bg-transparent border-light room-card">
+            <img src="image/hotel-pool.jpeg" class="card-img-top img-fluid" alt="Executive suite with pool"
+              style="max-height: 150px; object-fit: cover;" />
+            <div class="card-body">
+              <h4 class="card-title">EXECUTIVE SUITE</h4>
+              <p class="facility-title mb-1"><strong>FACILITY:</strong></p>
+              <p class="card-text mb-1">King size bed, large pool with rose petals, bar access, VIP room</p>
+              <button type="button" class="btn btn-primary btn-book"
+                onclick="alert('KAMAR TELAH ANDA BOOKING, SELAMAT BERLIBUR')">BOOK NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col" style="color: white;">
+          <div class="card h-100 text-center bg-transparent border-light room-card">
+            <img src="image/pexels-pixabay-164595.jpg" class="card-img-top img-fluid"
+              alt="Deluxe room with spa features" style="max-height: 150px; object-fit: cover;" />
+            <div class="card-body">
+              <h4 class="card-title">DELUXE ROOM</h4>
+              <p class="facility-title mb-1"><strong>FACILITY:</strong></p>
+              <p class="card-text mb-1">King size bed, private bathroom, 2 blankets, spa massage</p>
+              <button type="button" class="btn btn-primary btn-book"
+                onclick="alert('KAMAR TELAH ANDA BOOKING, SELAMAT BERLIBUR')">BOOK NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col" style="color: white;">
+          <div class="card h-100 text-center bg-transparent border-light room-card">
+            <img src="image/pexels-pixabay-262048.jpg" class="card-img-top img-fluid"
+              alt="Standard room with garden view" style="max-height: 150px; object-fit: cover;" />
+            <div class="card-body">
+              <h4 class="card-title">STANDARD ROOM</h4>
+              <p class="facility-title mb-1"><strong>FACILITY:</strong></p>
+              <p class="card-text mb-1">King size bed, garden access, balcony with garden view, private bathroom</p>
+              <button type="button" class="btn btn-primary btn-book"
+                onclick="alert('KAMAR TELAH ANDA BOOKING, SELAMAT BERLIBUR')">BOOK NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Duplicate row (optional: bisa dihapus jika tidak perlu duplikasi) -->
+        <div class="col" style="color: white;">
+          <div class="card h-100 text-center bg-transparent border-light room-card">
+            <img src="image/hotel-bedroom.jpeg" class="card-img-top img-fluid"
+              alt="Standard room with seaside view" style="max-height: 150px; object-fit: cover;" />
+            <div class="card-body">
+              <h4 class="card-title">STANDARD ROOM</h4>
+              <p class="facility-title mb-1"><strong>FACILITY:</strong></p>
+              <p class="card-text mb-1">King size bed, balcony with seaside view, warm room</p>
+              <button type="button" class="btn btn-primary btn-book"
+                onclick="alert('KAMAR TELAH ANDA BOOKING, SELAMAT BERLIBUR')">BOOK NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" style="color: white;">
+          <div class="card h-100 text-center bg-transparent border-light room-card">
+            <img src="image/hotel-pool.jpeg" class="card-img-top img-fluid" alt="Executive suite with pool"
+              style="max-height: 150px; object-fit: cover;" />
+            <div class="card-body">
+              <h4 class="card-title">EXECUTIVE SUITE</h4>
+              <p class="facility-title mb-1"><strong>FACILITY:</strong></p>
+              <p class="card-text mb-1">King size bed, large pool with rose petals, bar access, VIP room</p>
+              <button type="button" class="btn btn-primary btn-book"
+                onclick="alert('KAMAR TELAH ANDA BOOKING, SELAMAT BERLIBUR')">BOOK NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" style="color: white;">
+          <div class="card h-100 text-center bg-transparent border-light room-card">
+            <img src="image/pexels-pixabay-164595.jpg" class="card-img-top img-fluid"
+              alt="Deluxe room with spa features" style="max-height: 150px; object-fit: cover;" />
+            <div class="card-body">
+              <h4 class="card-title">DELUXE ROOM</h4>
+              <p class="facility-title mb-1"><strong>FACILITY:</strong></p>
+              <p class="card-text mb-1">King size bed, private bathroom, 2 blankets, spa massage</p>
+              <button type="button" class="btn btn-primary btn-book"
+                onclick="alert('KAMAR TELAH ANDA BOOKING, SELAMAT BERLIBUR')">BOOK NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" style="color: white;">
+          <div class="card h-100 text-center bg-transparent border-light room-card">
+            <img src="image/pexels-pixabay-262048.jpg" class="card-img-top img-fluid"
+              alt="Standard room with garden view" style="max-height: 150px; object-fit: cover;" />
+            <div class="card-body">
+              <h4 class="card-title">STANDARD ROOM</h4>
+              <p class="facility-title mb-1"><strong>FACILITY:</strong></p>
+              <p class="card-text mb-1">King size bed, garden access, balcony with garden view, private bathroom</p>
+              <button type="button" class="btn btn-primary btn-book"
+                onclick="alert('KAMAR TELAH ANDA BOOKING, SELAMAT BERLIBUR')">BOOK NOW</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

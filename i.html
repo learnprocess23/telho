@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Information</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    #myVideo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.6);
+    }
+
+    .topnav {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .topnav a {
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .info-box {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 2rem;
+      border-radius: 15px;
+    }
+
+    hr {
+      border-color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Video Background -->
+  <video id="myVideo" autoplay muted loop playsinline>
+    <source src="video/seaside2-hotel.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Navigation -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="i.html">Information</a>
+    <a href="u.html">Booking</a>
+    <a href="r.html">Contacts</a>
+  </div>
+
+  <!-- Content -->
+  <div class="container mt-5">
+    <div class="info-box">
+      <h2 class="text-center mb-4">About Maui Seaside Hotel</h2>
+
+      <p>
+        Welcome to Maui Seaside Hotel — your tropical escape located on the beautiful island of Maui, Hawaii.
+        Whether you're here for a romantic getaway, a family vacation, or a business retreat, our hotel offers the
+        perfect balance of luxury, relaxation, and convenience.
+      </p>
+
+      <hr />
+
+      <h4>Room Types</h4>
+      <ul>
+        <li><strong>Standard Room:</strong> Comfortable and affordable with garden view.</li>
+        <li><strong>Deluxe Room:</strong> Spacious rooms with oceanfront views.</li>
+        <li><strong>Executive Suite:</strong> Includes a private balcony, living space, and premium amenities.</li>
+      </ul>
+
+      <hr />
+
+      <h4>Facilities & Services</h4>
+      <ul>
+        <li>Outdoor swimming pool</li>
+        <li>Free high-speed Wi-Fi</li>
+        <li>24-hour front desk and concierge</li>
+        <li>On-site restaurant and beach bar</li>
+        <li>Fitness center and spa</li>
+        <li>Airport shuttle service</li>
+      </ul>
+
+      <hr />
+
+      <h4>Nearby Attractions</h4>
+      <ul>
+        <li>Lahaina Historic Town (15 min drive)</li>
+        <li>Ka'anapali Beach (10 min walk)</li>
+        <li>Maui Ocean Center</li>
+        <li>Haleakalā National Park</li>
+      </ul>
+
+      <p class="mt-4">
+        We look forward to welcoming you to paradise. Enjoy the aloha spirit at Maui Seaside Hotel!
+      </p>
+    </div>
+  </div>
+
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

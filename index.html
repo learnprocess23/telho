@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maui Hotel Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    #myVideo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100vw;
+      min-height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .topnav {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .topnav a {
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .tit h1 {
+      margin-top: 2rem;
+      font-weight: bold;
+    }
+
+    .box {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+
+    @media (min-width: 768px) {
+      .box {
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Video -->
+  <video id="myVideo" loop autoplay muted playsinline>
+    <source src="video/seaside-hotel.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Navigation -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="i.html">Information</a>
+    <a href="u.html">Booking</a>
+    <a href="r.html">Contacts</a>
+  </div>
+
+  <!-- Title -->
+  <div class="tit text-center text-white">
+    <h1>WELCOME TO</h1>
+    <h1>MAUI SEASIDE HOTEL</h1>
+  </div>
+
+  <!-- Section 1 -->
+  <div class="container mt-5">
+    <div class="row text-center">
+      <div class="col-md-6 mb-4">
+        <div class="box">
+          <h3>ABOUT US</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque neque, dolorum nesciunt alias illum, eum placeat voluptates quidem possimus veniam nihil quaerat odit fugiat et quam soluta! Inventore, ex id.</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="box">
+          <h3>FOUNDED BY / HISTORY</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, aspernatur repellat quaerat harum natus reiciendis eius omnis optio quo. Neque ullam repudiandae obcaecati explicabo pariatur repellat ab eveniet earum ipsa!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="row text-center">
+      <div class="col-md-6 mb-4">
+        <div class="box">
+          <h3>TEAMS</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque neque, dolorum nesciunt alias illum, eum placeat voluptates quidem possimus veniam nihil quaerat odit fugiat et quam soluta! Inventore, ex id.</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="box">
+          <h3>ABOUT OUR HOTELS</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, aspernatur repellat quaerat harum natus reiciendis eius omnis optio quo. Neque ullam repudiandae obcaecati explicabo pariatur repellat ab eveniet earum ipsa!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="row text-center mb-5">
+      <div class="col-md-6 mb-4">
+        <div class="box">
+          <h3>VACATIONS?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque neque, dolorum nesciunt alias illum, eum placeat voluptates quidem possimus veniam nihil quaerat odit fugiat et quam soluta! Inventore, ex id.</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="box">
+          <h3>ATTRACTIONS?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, aspernatur repellat quaerat harum natus reiciendis eius omnis optio quo. Neque ullam repudiandae obcaecati explicabo pariatur repellat ab eveniet earum ipsa!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

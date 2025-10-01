@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Contacts</title>
+  <link rel="stylesheet" href="r.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <style>
+    body {
+      background: rgb(20, 20, 20);
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      position: relative;
+    }
+
+    #myVideo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.6);
+    }
+
+    .topnav {
+      background-color: rgba(0, 0, 0, 0.7);
+      overflow: hidden;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .topnav a {
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    form input,
+    form textarea {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+      border: 1px solid #ccc;
+    }
+
+    form input::placeholder,
+    form textarea::placeholder {
+      color: #ccc;
+    }
+
+    .contact-icon img {
+      max-height: 100px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background video -->
+  <video id="myVideo" loop autoplay muted playsinline>
+    <source src="video/seaside-hotel.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Navbar -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="i.html">Information</a>
+    <a href="u.html">Booking</a>
+    <a href="r.html">Contacts</a>
+  </div>
+
+  <!-- Contact Info + Form -->
+  <div class="container mt-5 p-4">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="mb-4">
+      <p><strong>Address:</strong> 123 Seaside Road, Maui, Hawaii</p>
+      <p><strong>Phone:</strong> +1 808-555-1234</p>
+      <p><strong>Email:</strong> contact@mauiseasidehotel.com</p>
+    </div>
+
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Type your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Social Media Section -->
+  <section class="container mt-5 p-3">
+    <h1 class="text-center mb-4">CONTACTS & SOCIAL MEDIA:</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 text-center">
+      <div class="col contact-icon">
+        <img src="image/gmail-icon.png" alt="Gmail" class="img-fluid" />
+        <p><a href="mailto:bima.a.wahyudi@gmail.com">bima.a.wahyudi@gmail.com</a></p>
+      </div>
+      <div class="col contact-icon">
+        <img src="image/youtube-icon.png" alt="YouTube" class="img-fluid" />
+        <p><a href="https://www.youtube.com/@Bimasenna_AR9" target="_blank" rel="noopener noreferrer">YOUTUBE</a></p>
+      </div>
+      <div class="col contact-icon">
+        <img src="image/whatsaap-logo.jpeg" alt="WhatsApp" class="img-fluid" />
+        <p><a href="tel:081216113109">0812-1611-3109</a></p>
+      </div>
+      <div class="col contact-icon">
+        <img src="image/instagram-icon.png" alt="Instagram" class="img-fluid" />
+        <p><a href="https://www.instagram.com/key_ar9?igsh=cmxqcHlidzBla3Vq" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
