@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://learnprocess23.github.io/telho/sitemap.xml
